@@ -19,10 +19,10 @@ public class TileManager {
         tile = new Tile[10];
         mapTileNumber = new int[gp.maxWorldCol][gp.maxWorldRow];
         loadMap("/res/maps/world_map.txt");
-        getTileImage();
+        getTileImages();
     }
 
-    public void getTileImage() {
+    public void getTileImages() {
         try {
             tile[0] = new Tile();
             tile[0].image = ImageIO.read(getClass().getResourceAsStream("/res/tiles/grass.png"));
